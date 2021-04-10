@@ -6,7 +6,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 int main(void)
 {
-    int * p = NULL;
-    free(p);
+    int * array = (int*)malloc(sizeof(int)*100);
+    array[100]=0;
     return 0;
 }

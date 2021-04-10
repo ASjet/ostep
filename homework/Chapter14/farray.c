@@ -6,7 +6,9 @@
 ////////////////////////////////////////////////////////////////////////////////
 int main(void)
 {
-    int * p = NULL;
-    free(p);
+    int * arr = (int*)malloc(sizeof(int)*100);
+    free(arr);
+    printf("%d\n",arr[2]);
+    free(arr+5);
     return 0;
 }
